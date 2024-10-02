@@ -1,0 +1,108 @@
+/*
+ * Ethan Danitz
+ * Web Development
+ * Assignment 3
+ * Last Modified: 10/2/24
+ */
+
+h2 {
+    text-align: center;
+    /* EXTRA CREDIT special effect*/
+    text-shadow: 2px 2px 3px red, 0 0 8px lightseagreen;
+}
+
+h3 {
+    text-align: center;
+    /* EXTRA CREDIT special effect*/
+    text-shadow: 2px 2px 3px red, 0 0 6px purple;
+}
+
+h4 {
+    text-align: center;
+}
+
+tr td {
+    border: 1px solid green;
+    vertical-align: middle;
+}
+
+table {
+    border: 3px solid green;
+    background-color: beige;
+    margin: 5px;
+}
+
+td {
+    background-color: lemonchiffon;
+}
+
+li {
+    border: 1px solid green;
+    padding: 2px;
+    padding-left: 4px;
+    background-color: antiquewhite;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.grid-top {
+    grid-column: 1 / 3;
+    /* EXTRA CREDIT special effect*/
+    background: radial-gradient(lightgray, rgb(165, 165, 165));
+}
+
+.grid-left {
+    background-color: lightcoral;
+    padding: 8px;
+}
+
+.grid-right {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.top-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-layout {
+    display: flex;
+    gap: 15px;
+}
+
+.hobbies-list {
+    gap: 20px;
+    border: solid 3px green;
+    border-left: 7px;
+    /* EXTRA CREDIT special effect*/
+    background: linear-gradient(lemonchiffon, yellow);
+    padding: 5px;
+}
+
+
+
+
+#logo {
+    border-radius: 40px;
+    padding: 5px;
+    box-shadow: inset 5px 5px;
+}
+
+#profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
