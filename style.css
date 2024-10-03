@@ -5,25 +5,37 @@
  * Last Modified: 10/2/24
  */
 
-h2 {
+ h2 {
     text-align: center;
     /* EXTRA CREDIT special effect*/
-    text-shadow: 2px 2px 3px red, 0 0 8px lightseagreen;
+    text-shadow: 2px 2px 3px #A1CDA8, 0 0 8px #A1CDA8;
 }
 
 h3 {
     text-align: center;
     /* EXTRA CREDIT special effect*/
-    text-shadow: 2px 2px 3px red, 0 0 6px purple;
+    text-shadow: 2px 2px 3px #A1CDA8, 0 0 6px #A1CDA8;
 }
 
 h4 {
     text-align: center;
 }
 
-tr td {
-    border: 1px solid green;
+p {
+    padding: 3px;
+}
+
+td {
+    border: 1px solid #AD9BAA;
     vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: #A1CDA8;
+}
+
+tr:nth-child(odd) {
+    background-color: #C5E7E2;
 }
 
 table {
@@ -32,15 +44,14 @@ table {
     margin: 5px;
 }
 
-td {
-    background-color: lemonchiffon;
+th {
+    background-color: #B5DFCA;
 }
 
 li {
-    border: 1px solid green;
+    border: 1px solid #AD9BAA;
     padding: 2px;
     padding-left: 4px;
-    background-color: antiquewhite;
 }
 
 
@@ -57,12 +68,12 @@ li {
 }
 
 .grid-left {
-    background-color: lightcoral;
+    background-color: #C5E7E2;
     padding: 8px;
 }
 
 .grid-right {
-    background-color: lightblue;
+    background-color: #627264;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,19 +89,51 @@ li {
 
 .links-layout {
     display: flex;
-    gap: 15px;
+    gap: 17px;
+    padding: 21px; /* hard coded to be center*/
+    justify-content: center;
+}
+
+.links-layout > div > a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Bold';
+    border: 4px outset #627264;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.links-layout > div > a:hover {
+    background-color: aquamarine;
 }
 
 .hobbies-list {
     gap: 20px;
-    border: solid 3px green;
-    border-left: 7px;
+    padding: 7px;
+    padding-left: 22px;
+    border: dotted 3px #AD9BAA;
     /* EXTRA CREDIT special effect*/
-    background: linear-gradient(lemonchiffon, yellow);
-    padding: 5px;
+    background: linear-gradient(#B5DFCA, #A1CDA8);
+    
 }
 
+.separator {
+    width: 100%;
+    height: 5px;
+    background-color: #AD9BAA;
+    margin: 10px 0;
+}
 
+.skills-list {
+    border: 3px solid #627264;
+    padding-right: 4px;
+    list-style-type: square;
+}
+
+.skills-list > li {
+    border: 2px solid #AD9BAA;
+    margin: 5px 0;
+    padding: 2px;
+}
 
 
 #logo {
@@ -105,4 +148,6 @@ li {
     margin-right: auto;
     border-radius: 5px;
 }
+
+
 
